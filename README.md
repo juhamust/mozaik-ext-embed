@@ -4,7 +4,7 @@ Embded content like HTML markup into widget. Handy to adding ambiguous content l
 
 ## Setup
 
-1. Navigate into dashboard project directory
+1. Navigate into dashboard directory
 1. Install dependencies
   ```shell
   npm i -S mozaik-ext-embed
@@ -15,7 +15,14 @@ Embded content like HTML markup into widget. Handy to adding ambiguous content l
 
   Mozaik.Registry.addExtensions({ embed });
   ```
+1. Build dashboard
+  ```shell
+  gulp build
+  ```
 1. Restart dashboard
+  ```shell
+  npm start
+  ```
 
 ## Widgets
 
@@ -23,18 +30,20 @@ Embded content like HTML markup into widget. Handy to adding ambiguous content l
 
 > Show custom markup in widget
 
+![https://raw.githubusercontent.com/juhamust/mozaik-ext-embed/master/preview.png](https://raw.githubusercontent.com/juhamust/mozaik-ext-embed/master/preview.png)
+
 #### parameters
 
 key       | required | description
 ----------|----------|--------------------------
 `content` | yes      | *html content*
-`title`   | no       | *widget title content*
+`title`   | no       | *widget title value*
 
 #### usage
 
 ```javascript
 {
-  type: 'embded.markup',
+  type: 'embed.markup',
   title: 'Live feed',
   content: '<iframe src="http://livefeed.com/"></iframe>',
   columns: 1, rows: 1, x: 0, y: 0
