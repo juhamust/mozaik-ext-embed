@@ -13,9 +13,23 @@ class Markup extends Component {
   }
 
   render() {
-    return (<div dangerouslySetInnerHTML={{
-      __html: this._getMarkup.bind(this)()
+    const { title } = this.props;
+    let output = (<div dangerouslySetInnerHTML={{
+      __html: this.props.content
     }}></div>);
+
+    if (title) {
+      output = (
+        <div className="widget__markup--full_height">
+          <div className="widget__header">
+            {title}
+          </div>
+          {output}
+        </div>
+      );
+    }
+
+    return output;
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "mozaik-ext-embed",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Mozaik extension for embedding things like HTML in widget",
   "main": "./src/components/index.js",
