@@ -28,12 +28,14 @@ Embded content like HTML markup into widget. Handy to adding ambiguous content l
 key       | required | description
 ----------|----------|--------------------------
 `content` | yes      | *html content*
+`title`   | no       | *widget title content*
 
 #### usage
 
 ```javascript
 {
   type: 'embded.markup',
+  title: 'Live feed',
   content: '<iframe src="http://livefeed.com/"></iframe>',
   columns: 1, rows: 1, x: 0, y: 0
 }
