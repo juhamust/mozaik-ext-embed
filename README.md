@@ -26,7 +26,7 @@ Embded content like HTML markup into widget. Handy to adding ambiguous content l
 
 ## Widgets
 
-### Markup
+### Markup (embed.markup)
 
 > Show custom markup in widget
 

@@ -14,13 +14,13 @@ class Markup extends Component {
 
   render() {
     const { title } = this.props;
-    let output = (<div dangerouslySetInnerHTML={{
+    let output = (<div className="widget-markup__body" dangerouslySetInnerHTML={{
       __html: this.props.content
     }}></div>);
 
     if (title) {
       output = (
-        <div className="widget__markup--full_height">
+        <div className="widget-markup__container">
           <div className="widget__header">
             {title}
           </div>

@@ -8,5 +8,5 @@ test('should embed markup', t => {
   const props  = { content: '<p>test</p>' };
   const wrapper = shallow(<Markup content={props.content} />);
 
-  t.is(wrapper.html(), '<div><p>test</p></div>');
+  t.is(wrapper.html(), '<div class="widget-markup__body"><p>test</p></div>');
 });
