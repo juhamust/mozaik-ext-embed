@@ -2,6 +2,8 @@
 
 Embded content like HTML markup into widget. Handy to adding ambiguous content like raw HTML (iframe, html video etc.)
 
+**NOTE:** If you're looking for a solution to refresh image URL periodically, please consider [mozaik-ext-image](https://github.com/juhamust/mozaik-ext-image) -extension instead. This `mozaik-ext-embed` -extension relies source to update itself whenever needed, if at all.
+
 ## Setup
 
 1. Navigate into dashboard directory
